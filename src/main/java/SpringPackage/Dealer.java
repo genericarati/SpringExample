@@ -7,6 +7,7 @@ public class Dealer {
     private String dealerId;
 
     private String dealerName;
+    public String getDealerName;
 
     public Dealer(String dealerId, String dealerName) {
         this.dealerId = dealerId;
@@ -21,6 +22,10 @@ public class Dealer {
         this.dealerId = dealerId;
     }
 
+    public void setDealerName(String dealerName) {
+        this.dealerName = dealerName;
+    }
+
     @Override
     public String toString() {
         return "Dealer{" +
@@ -28,5 +33,4 @@ public class Dealer {
                 ", dealerName='" + dealerName + '\'' +
                 '}';
     }
-
 }

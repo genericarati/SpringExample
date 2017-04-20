@@ -20,5 +20,11 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
+    @Bean
+    public ConcurrentMapCacheManager cacheManager(){
+        ConcurrentMapCacheManager concurrentMapCacheManager = new ConcurrentMapCacheManager("dealers");
+        return concurrentMapCacheManager;
+    }
+
 
 }
